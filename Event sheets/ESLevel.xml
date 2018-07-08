@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ESLevel</name>
+    <events>
+        <variable constant="0" name="levelGlobal" sid="781073486064630" static="0" type="number">1</variable>
+        <event-block sid="449944079223982">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="385543495159760" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Check item exists" sid="270618364643550" type="LSLevel">
+                    <param id="0" name="Key">&quot;level&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="428731416648892" type="Audio">
+                    <param id="0" name="Audio file">sound</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="731007096342550">
+            <conditions>
+                <condition id="9" name="On item exists" sid="901128180652096" type="LSLevel">
+                    <param id="0" name="Key">&quot;level&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="302317435487864" type="System">
+                    <param id="0" name="Variable">levelGlobal</param>
+                    <param id="1" name="Value">LSLevel.ItemValue + 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="344862365462674">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="586179093386028" type="level">
+                    <param id="0" name="Instance variable">level</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">levelGlobal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="819064562933424" type="level">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="525496056296602" type="level">
+                    <param id="0" name="Object">number</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="660363392173387" type="number">
+                    <param id="0" name="Frame number">level.level</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="725939173321248">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="959704037224550" type="Touch">
+                    <param id="0" name="Object">btBack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="873771629442110" type="System">
+                    <param id="0" name="Layout">Home</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="260032622450097">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="361724288110798" type="Touch">
+                    <param id="0" name="Object">level</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="643894285873197" type="level">
+                    <param id="0" name="Instance variable">level</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">levelGlobal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="349835956551586" type="System">
+                    <param id="0" name="Variable">levelSelect</param>
+                    <param id="1" name="Value">level.level</param>
+                </action>
+                <action id="-9" name="Set value" sid="718582737601571" type="System">
+                    <param id="0" name="Variable">start</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="466295302994859" type="System">
+                    <param id="0" name="Layout">Game</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

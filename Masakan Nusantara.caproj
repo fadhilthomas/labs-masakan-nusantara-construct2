@@ -1,0 +1,826 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Masakan Nusantara</name>
+    <description>cook</description>
+    <version>1.0.0.0</version>
+    <author>lucknuts</author>
+    <author-email>cook@lucknuts.com</author-email>
+    <author-website>http://lucknuts.com</author-website>
+    <app-id>com.cook</app-id>
+    <unique-id>2gf3yi5yuqjw2</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Home</first-layout>
+    <use-loader-layout>1</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Sprite2" sid="241732106408660">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="591450209964421" speed="5">
+                    <frame duration="1" hotspotX="0.500766" hotspotY="0.504202" original-source="D:\TEKNOKRAT\Pemrograman Game\ASET GAME\kitchen background\meja masak2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="169590865099475">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="166903863025549" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\TEKNOKRAT\Pemrograman Game\ASET GAME\kitchen background\batang.png">
+                        <collision-poly>
+                            <point x="0.00458716" y="0.005" />
+                            <point x="0.995413" y="0.005" />
+                            <point x="0.949541" y="0.5" />
+                            <point x="0.949541" y="0.945" />
+                            <point x="0.5" y="0.995" />
+                            <point x="0.0458716" y="0.95" />
+                            <point x="0.0458716" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="refri" sid="707867926202207">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="143472428235571" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\TEKNOKRAT\Pemrograman Game\ASET GAME\kitchen background\fridge.png">
+                        <collision-poly>
+                            <point x="0.261719" y="0.261719" />
+                            <point x="0.5" y="0" />
+                            <point x="0.738281" y="0.261719" />
+                            <point x="0.738281" y="0.738281" />
+                            <point x="0.5" y="0.949219" />
+                            <point x="0.261719" y="0.738281" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg" sid="171058757915191">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463417729298112" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\TEKNOKRAT\Pemrograman Game\ASET GAME\kitchen background\kitchen.png">
+                        <collision-poly>
+                            <point x="0.533203" y="0.533203" />
+                            <point x="0.5" y="0.533203" />
+                            <point x="0.482422" y="0.517578" />
+                            <point x="0.982422" y="0.5" />
+                            <point x="0.992188" y="0.992188" />
+                            <point x="0.0175781" y="0.982422" />
+                            <point x="0.0214844" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bahan" sid="905080472263362">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="drag" sid="340812433239288" type="boolean" />
+                <instance-variable name="id" sid="287381680793778" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="335584821342594">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="504660034329970">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="943765249217916">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="15" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="834294154601594" speed="0">
+                    <frame duration="1" hotspotX="0.504167" hotspotY="0.861314" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\air.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.127737" />
+                            <point x="0.5" y="0" />
+                            <point x="0.708333" y="0.127737" />
+                            <point x="0.941667" y="0.5" />
+                            <point x="0.929167" y="0.968978" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0708333" y="0.968978" />
+                            <point x="0.0583333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503566" hotspotY="0.861111" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\ayam.png">
+                        <collision-poly>
+                            <point x="0.359486" y="0.5" />
+                            <point x="0.499287" y="0.160714" />
+                            <point x="0.918688" y="0.113095" />
+                            <point x="0.971469" y="0.5" />
+                            <point x="0.798859" y="0.720238" />
+                            <point x="0.499287" y="0.736111" />
+                            <point x="0.0470756" y="0.934524" />
+                            <point x="0.359486" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505495" hotspotY="0.862637" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\bawang.png">
+                        <collision-poly>
+                            <point x="0.260989" y="0.260989" />
+                            <point x="0.5" y="0.0521978" />
+                            <point x="0.739011" y="0.260989" />
+                            <point x="0.975275" y="0.5" />
+                            <point x="0.870879" y="0.870879" />
+                            <point x="0.5" y="1" />
+                            <point x="0.129121" y="0.870879" />
+                            <point x="0.0247253" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502564" hotspotY="0.86236" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\cabe.png">
+                        <collision-poly>
+                            <point x="0.0233333" y="0.0255474" />
+                            <point x="0.5" y="0.543796" />
+                            <point x="0.503333" y="0.543796" />
+                            <point x="0.476667" y="0.5" />
+                            <point x="0.923333" y="0.916058" />
+                            <point x="0.5" y="0.934307" />
+                            <point x="0.25" y="0.726277" />
+                            <point x="0.07" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504202" hotspotY="0.861167" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\daging.png">
+                        <collision-poly>
+                            <point x="0.116246" y="0.167002" />
+                            <point x="0.5" y="0.00603622" />
+                            <point x="0.869748" y="0.187123" />
+                            <point x="0.97619" y="0.498994" />
+                            <point x="0.845938" y="0.778672" />
+                            <point x="0.0714286" y="0.897384" />
+                            <point x="0.0644258" y="0.498994" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504237" hotspotY="0.860051" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\garam.png">
+                        <collision-poly>
+                            <point x="0.144068" y="0.086514" />
+                            <point x="0.5" y="0" />
+                            <point x="0.855932" y="0.086514" />
+                            <point x="0.932203" y="0.498728" />
+                            <point x="0.949153" y="0.969466" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0508475" y="0.969466" />
+                            <point x="0.0677966" y="0.498728" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503371" hotspotY="0.862903" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\gula.png">
+                        <collision-poly>
+                            <point x="0.121348" y="0.217742" />
+                            <point x="0.498876" y="0.229839" />
+                            <point x="0.804494" y="0.350806" />
+                            <point x="0.98427" y="0.5" />
+                            <point x="0.948315" y="0.907258" />
+                            <point x="0.498876" y="0.899194" />
+                            <point x="0.0831461" y="0.850806" />
+                            <point x="0.0179775" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504979" hotspotY="0.859327" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\ikan.png">
+                        <collision-poly>
+                            <point x="0.137587" y="0.295503" />
+                            <point x="0.499501" y="0.00642398" />
+                            <point x="0.803589" y="0.421842" />
+                            <point x="0.982054" y="0.498929" />
+                            <point x="0.802592" y="0.576017" />
+                            <point x="0.499501" y="0.824411" />
+                            <point x="0.141575" y="0.695931" />
+                            <point x="0" y="0.498929" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503856" hotspotY="0.861183" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\jahe.png">
+                        <collision-poly>
+                            <point x="0.323907" y="0.323907" />
+                            <point x="0.498715" y="0.44473" />
+                            <point x="0.760925" y="0.239075" />
+                            <point x="0.899743" y="0.498715" />
+                            <point x="0.884319" y="0.884319" />
+                            <point x="0.498715" y="0.781491" />
+                            <point x="0.0822622" y="0.917738" />
+                            <point x="0.0411311" y="0.498715" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504902" hotspotY="0.862259" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\kecap.png">
+                        <collision-poly>
+                            <point x="0.0343137" y="0.0192837" />
+                            <point x="0.5" y="0" />
+                            <point x="0.965686" y="0.0192837" />
+                            <point x="0.877451" y="0.498623" />
+                            <point x="0.95098" y="0.972452" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0490196" y="0.972452" />
+                            <point x="0.122549" y="0.498623" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504026" hotspotY="0.862013" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\kelapa.png">
+                        <collision-poly>
+                            <point x="0.127214" y="0.128247" />
+                            <point x="0.499195" y="0.0340909" />
+                            <point x="0.798712" y="0.202922" />
+                            <point x="0.993559" y="0.5" />
+                            <point x="0.869565" y="0.868506" />
+                            <point x="0.499195" y="1" />
+                            <point x="0.144928" y="0.853896" />
+                            <point x="0.00161031" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.862069" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\mie.png">
+                        <collision-poly>
+                            <point x="0.184466" y="0.181992" />
+                            <point x="0.499029" y="0.0689655" />
+                            <point x="0.801942" y="0.195402" />
+                            <point x="0.928155" y="0.5" />
+                            <point x="0.807767" y="0.810345" />
+                            <point x="0.499029" y="0.921456" />
+                            <point x="0.184466" y="0.818008" />
+                            <point x="0.0796117" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504892" hotspotY="0.861204" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\tepung.png">
+                        <collision-poly>
+                            <point x="0.344423" y="0.294314" />
+                            <point x="0.499022" y="0.00334448" />
+                            <point x="0.659491" y="0.29097" />
+                            <point x="0.825832" y="0.5" />
+                            <point x="0.982387" y="0.98495" />
+                            <point x="0.499022" y="1" />
+                            <point x="0.0195695" y="0.983278" />
+                            <point x="0.181996" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502825" hotspotY="0.861111" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\tomat.png">
+                        <collision-poly>
+                            <point x="0.5" y="0" />
+                            <point x="0.974576" y="0.5" />
+                            <point x="0.875706" y="0.877778" />
+                            <point x="0.5" y="0.997222" />
+                            <point x="0.124294" y="0.877778" />
+                            <point x="0.0254237" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503521" hotspotY="0.86052" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\New folder\udang.png">
+                        <collision-poly>
+                            <point x="0.214789" y="0.144208" />
+                            <point x="0.5" y="0.0165485" />
+                            <point x="0.947183" y="0.035461" />
+                            <point x="0.401408" y="0.498818" />
+                            <point x="0.838028" y="0.891253" />
+                            <point x="0.5" y="0.770686" />
+                            <point x="0.373239" y="0.749409" />
+                            <point x="0.028169" y="0.498818" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wall" sid="842010831762319">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\me\Downloads\bg green.png" />
+        </object-type>
+        <object-type name="bound" sid="388290592982014">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="523300344878068" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="arBahan" sid="468754526147344">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="tombolOk" sid="961343531360626">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="312674799688237" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="995548433784672">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Keyboard" sid="617832506533755">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type global="1" name="Dictionary" sid="154204868548167">
+            <plugin id="Dictionary" />
+        </object-type>
+        <object-type name="Conveyor" sid="430051382675340">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="156980119035943">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\me\Downloads\conveyor proto.png" />
+        </object-type>
+        <object-type name="conBatas" sid="116631911414749">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="CustomMovement" sid="688416577119950">
+                    <behavior id="custom" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="775294638094313">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="275303926154929">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\me\Downloads\conveyor proto.png" />
+        </object-type>
+        <object-type name="batasConv" sid="509615313549172">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="657595708416166">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="672697392329795" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="waktu" sid="421814498672878">
+            <plugin id="Spritefont2" />
+            <instance-variables>
+                <instance-variable name="Type" sid="741263089347241" type="string" />
+            </instance-variables>
+            <texture original-source="D:\15312580_UBAIDILAH\.UBAIDILAH 6\P.GAME\font\SpriteFont_gamepertamaane_[0,0,0,0]_52x56.png" />
+        </object-type>
+        <object-type name="pan" sid="376251796094776">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="645334978095363" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\me\Downloads\frying-pan.png">
+                        <collision-poly>
+                            <point x="0.20428" y="0.20428" />
+                            <point x="0.974708" y="0.0252918" />
+                            <point x="0.797665" y="0.797665" />
+                            <point x="0.5" y="0.992218" />
+                            <point x="0.128405" y="0.871595" />
+                            <point x="0.0077821" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hud" sid="880984598763639">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="682595016804524" speed="5">
+                    <frame duration="1" hotspotX="0.488636" hotspotY="0.488636" original-source="C:\Users\me\Downloads\pertemuan 2\pertemuan 2\PNG\HUD\hudCoin.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="poin" sid="638274445399624">
+            <plugin id="Spritefont2" />
+            <instance-variables>
+                <instance-variable name="Type" sid="791356814695792" type="string" />
+            </instance-variables>
+            <texture original-source="D:\15312580_UBAIDILAH\.UBAIDILAH 6\P.GAME\font\SpriteFont_gamepertamaane_[0,0,0,0]_52x56.png" />
+        </object-type>
+        <object-type name="TextKunci" sid="492433656424226">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="939884493181188" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501099" original-source="E:\asset\ayam\Untitled-4.png">
+                        <collision-poly>
+                            <point x="0.0206612" y="0.032967" />
+                            <point x="0.5" y="0" />
+                            <point x="0.979339" y="0.032967" />
+                            <point x="0.998623" y="0.498901" />
+                            <point x="0.979339" y="0.967033" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0206612" y="0.967033" />
+                            <point x="0" y="0.498901" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="masakan" sid="173015111596096">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="522985180203418" speed="0">
+                    <frame duration="1" hotspotX="0.50099" hotspotY="0.501475" original-source="C:\Users\microsoft\Downloads\asset masakan nusantara\zonk.png" />
+                    <frame duration="1" hotspotX="0.50099" hotspotY="0.501475" original-source="C:\Users\microsoft\Downloads\asset masakan nusantara\ayam_betutu.png" />
+                    <frame duration="1" hotspotX="0.50099" hotspotY="0.501475" original-source="C:\Users\microsoft\Downloads\asset masakan nusantara\rendang.png" />
+                    <frame duration="1" hotspotX="0.50099" hotspotY="0.501475" original-source="C:\Users\microsoft\Downloads\asset masakan nusantara\mie_aceh.png" />
+                    <frame duration="1" hotspotX="0.50099" hotspotY="0.501475" original-source="C:\Users\microsoft\Downloads\asset masakan nusantara\pempek.png" />
+                    <frame duration="1" hotspotX="0.50099" hotspotY="0.501475" original-source="C:\Users\microsoft\Downloads\asset masakan nusantara\bakwan.png" />
+                    <frame duration="1" hotspotX="0.50099" hotspotY="0.501475" original-source="C:\Users\microsoft\Downloads\asset masakan nusantara\mie_instan.png" />
+                    <frame duration="1" hotspotX="0.50099" hotspotY="0.501475" original-source="C:\Users\microsoft\Downloads\asset masakan nusantara\wedang.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameOver" sid="921760856574220">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="234259419752920" speed="5">
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="C:\Users\me\Downloads\platformer-assets\Platformer\GUI\gameover.png" />
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="C:\Users\me\Downloads\platformer-assets\Platformer\GUI\complete.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="food" sid="632203103765851">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="291728445370675" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50137" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\Ayam Betutu\Resep Ayam Betutu Bali.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tool" sid="899845724328330">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="146963460538307">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="212516282143900">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="816296369371696" speed="5">
+                    <frame duration="1" hotspotX="0.500736" hotspotY="0.500921" original-source="C:\Users\me\Downloads\alat magic.png">
+                        <collision-poly>
+                            <point x="0.0360824" y="0.00368324" />
+                            <point x="0.265096" y="0.341621" />
+                            <point x="0.740795" y="0.3407" />
+                            <point x="0.986745" y="0" />
+                            <point x="0.88218" y="0.499079" />
+                            <point x="0.88218" y="0.950276" />
+                            <point x="0.111929" y="0.952118" />
+                            <point x="0.104566" y="0.499079" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin" sid="668456367296509">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="918782024492720" speed="5">
+                    <frame duration="1" hotspotX="0.488636" hotspotY="0.488636" original-source="C:\Users\me\Downloads\pertemuan 2\pertemuan 2\PNG\HUD\hudCoin.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="poin_get" sid="369622029417546">
+            <plugin id="Spritefont2" />
+            <instance-variables>
+                <instance-variable name="Type" sid="231939798438088" type="string" />
+            </instance-variables>
+            <texture original-source="D:\15312580_UBAIDILAH\.UBAIDILAH 6\P.GAME\font\SpriteFont_gamepertamaane_[0,0,0,0]_52x56.png" />
+        </object-type>
+        <object-type name="main" sid="747305853223307">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="973945225780642" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\me\Downloads\menu utama game.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="600425843635391">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="660434001290475" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50021" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\bgSelect.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.999721" y="0.000419639" />
+                            <point x="0.999721" y="0.99958" />
+                            <point x="0.000279174" y="0.99958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btPlay" sid="360827635029731">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="662527438218159" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\play.png">
+                        <collision-poly>
+                            <point x="0.186813" y="0.186813" />
+                            <point x="0.494505" y="0.043956" />
+                            <point x="0.813187" y="0.181319" />
+                            <point x="0.923077" y="0.494505" />
+                            <point x="0.802198" y="0.802198" />
+                            <point x="0.494505" y="0.928571" />
+                            <point x="0.197802" y="0.796703" />
+                            <point x="0.0769231" y="0.494505" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\play2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="level" sid="522388012353495">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="level" sid="401887036267086" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="218106710278379" speed="5">
+                    <frame duration="1" hotspotX="0.587459" hotspotY="0.425743" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\lv.png">
+                        <collision-poly>
+                            <point x="0.211221" y="0.211221" />
+                            <point x="0.5" y="0.00825083" />
+                            <point x="0.927393" y="0.0726073" />
+                            <point x="0.988449" y="0.5" />
+                            <point x="0.787129" y="0.787129" />
+                            <point x="0.5" y="0.831683" />
+                            <point x="0.019802" y="0.980198" />
+                            <point x="0.163366" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.587459" hotspotY="0.425743" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\lvld.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="number" sid="360297380380480">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="375813204362569" speed="0">
+                    <frame duration="1" hotspotX="0.502959" hotspotY="0.501754" />
+                    <frame duration="0" hotspotX="0.503759" hotspotY="0.5" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\1.png" />
+                    <frame duration="1" hotspotX="0.503226" hotspotY="0.501767" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\3.png" />
+                    <frame duration="1" hotspotX="0.502326" hotspotY="0.5" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\4.png" />
+                    <frame duration="1" hotspotX="0.502959" hotspotY="0.501754" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\5.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btBack" sid="460984462018677">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="585759204352352" speed="5">
+                    <frame duration="1" hotspotX="0.500956" hotspotY="0.5" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\back.png">
+                        <collision-poly>
+                            <point x="0.172084" y="0.3125" />
+                            <point x="0.499044" y="0.253472" />
+                            <point x="0.858509" y="0.256944" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85086" y="0.729167" />
+                            <point x="0.499044" y="0.729167" />
+                            <point x="0.172084" y="0.6875" />
+                            <point x="0.00191205" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btBack2Select" sid="580972148491454">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="680154073639733" speed="5">
+                    <frame duration="1" hotspotX="0.499044" hotspotY="0.5" original-source="C:\Users\me\Downloads\masakan nusantara\masakan nusantara\bahan\back.png">
+                        <collision-poly>
+                            <point x="0.172084" y="0.3125" />
+                            <point x="0.499044" y="0.253472" />
+                            <point x="0.858509" y="0.256944" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85086" y="0.729167" />
+                            <point x="0.499044" y="0.729167" />
+                            <point x="0.172084" y="0.6875" />
+                            <point x="0.00191206" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="point" sid="516274653032133">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="241062839038028" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="scoreGameOver" sid="615310503871138">
+            <plugin id="Spritefont2" />
+            <instance-variables>
+                <instance-variable name="Type" sid="331629745566144" type="string" />
+            </instance-variables>
+            <texture original-source="D:\15312580_UBAIDILAH\.UBAIDILAH 6\P.GAME\font\SpriteFont_gamepertamaane_[0,0,0,0]_52x56.png" />
+        </object-type>
+        <object-type name="gui" sid="602197721206005">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507044812252664" speed="0">
+                    <frame duration="1" hotspotX="0.501266" hotspotY="0.5" original-source="E:\asset\ayam\gui2.png">
+                        <collision-poly>
+                            <point x="0.043038" y="0.0372807" />
+                            <point x="0.498734" y="0.00219298" />
+                            <point x="0.956962" y="0.0372807" />
+                            <point x="0.979747" y="0.5" />
+                            <point x="0.881013" y="0.89693" />
+                            <point x="0.498734" y="0.997807" />
+                            <point x="0.134177" y="0.883772" />
+                            <point x="0.0303797" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" original-source="E:\gamektl\lv1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" original-source="E:\gamektl\lv2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" original-source="E:\gamektl\lv3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" original-source="E:\gamektl\lv4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" original-source="E:\gamektl\lv5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" original-source="E:\gamektl\startAyam.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" original-source="E:\gamektl\startRendang.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" original-source="E:\gamektl\startMieAceh.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="restart" sid="306780508234915">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="restart" pingpong="0" repeatcount="1" repeatto="0" sid="310592998476858" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\me\Downloads\platformer-assets\Platformer\GUI\gui\button\Button_09.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\me\Downloads\platformer-assets\Platformer\GUI\gui\button\Button_10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\me\Downloads\platformer-assets\Platformer\GUI\gui\button\Button_11.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont3" sid="655675724445957">
+            <plugin id="Spritefont2" />
+            <texture original-source="D:\15312580_UBAIDILAH\.UBAIDILAH 6\P.GAME\font\SpriteFont_gamepertamaane_[0,0,0,0]_52x56.png" />
+        </object-type>
+        <object-type name="TiledBackground12" sid="187322083560038">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="btHome" sid="862967424445830">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160360191635734" speed="0">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="C:\Users\me\Downloads\platformer-assets\Platformer\GUI\gui\button\Button_50.png" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="C:\Users\me\Downloads\platformer-assets\Platformer\GUI\gui\button\Button_51.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\me\Downloads\platformer-assets\Platformer\GUI\gui\button\Button_52.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btNex" sid="101945134951623">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="195223445249521" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\me\Downloads\platformer-assets\Platformer\GUI\gui\button\Button_46.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\me\Downloads\platformer-assets\Platformer\GUI\gui\button\Button_47.png" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="C:\Users\me\Downloads\platformer-assets\Platformer\GUI\gui\button\Button_48.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LSLevel" sid="724097538599486">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="btInfo" sid="735541919580934">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="111953567021464" speed="0">
+                    <frame duration="1" hotspotX="0.500197" hotspotY="0.500479" original-source="C:\Users\me\Downloads\button.info.png" />
+                    <frame duration="1" hotspotX="0.500197" hotspotY="0.500479" original-source="C:\Users\me\Downloads\button.info_d.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bgTentang" sid="225239614671710">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="130387248737477" speed="5">
+                    <frame duration="1" hotspotX="0.50039" hotspotY="0.5" original-source="E:\ABOUT.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="stars" sid="620329494491429">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="739310755985412" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.491803" original-source="C:\Users\me\Desktop\star.png">
+                        <collision-poly>
+                            <point x="0.296875" y="0.278689" />
+                            <point x="0.5" y="0.0327869" />
+                            <point x="0.703125" y="0.278689" />
+                            <point x="0.90625" y="0.491803" />
+                            <point x="0.796875" y="0.803279" />
+                            <point x="0.5" y="0.885246" />
+                            <point x="0.1875" y="0.819672" />
+                            <point x="0.09375" y="0.491803" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="poin_star" sid="286277203193549">
+            <plugin id="Spritefont2" />
+            <instance-variables>
+                <instance-variable name="Type" sid="474319690833115" type="string" />
+            </instance-variables>
+            <texture original-source="D:\15312580_UBAIDILAH\.UBAIDILAH 6\P.GAME\font\SpriteFont_gamepertamaane_[0,0,0,0]_52x56.png" />
+        </object-type>
+        <object-type name="btNextStart" sid="160602896219644">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="920098821117214" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\me\Downloads\platformer-assets\Platformer\GUI\gui\button\Button_46.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\me\Downloads\platformer-assets\Platformer\GUI\gui\button\Button_47.png" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="C:\Users\me\Downloads\platformer-assets\Platformer\GUI\gui\button\Button_48.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="931582445340092">
+            <plugin id="Audio" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Game.xml</layout>
+        <layout>Home.xml</layout>
+        <layout>LevelSelect.xml</layout>
+        <layout>Tentang.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>ESGame.xml</event-sheet>
+        <event-sheet>ESHome.xml</event-sheet>
+        <event-sheet>ESLevel.xml</event-sheet>
+        <event-sheet>ESTentang.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="15">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="14" />
+        <global-instance type="LSLevel" uid="54" />
+        <global-instance type="Audio" uid="63">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="sound.m4a" />
+        <file name="sound.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

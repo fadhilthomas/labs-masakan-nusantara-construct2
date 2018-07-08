@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Game</layout>
+        <layout order="2">LevelSelect</layout>
+        <event-sheet active="1" order="1">ESGame</event-sheet>
+        <event-sheet order="3">ESHome</event-sheet>
+        <event-sheet order="4">ESLevel</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/refri/" />
+        <folder expanded="1" path="animation-folder/bg/" />
+        <folder expanded="1" path="animation-folder/bahan/" />
+        <folder expanded="1" path="animation-folder/bound/" />
+        <folder expanded="1" path="animation-folder/tombolOk/" />
+        <folder expanded="1" path="animation-folder/batasConv/" />
+        <folder expanded="1" path="animation-folder/pan/" />
+        <folder expanded="1" path="animation-folder/hud/" />
+        <folder expanded="1" path="animation-folder/TextKunci/" />
+        <folder expanded="1" path="animation-folder/masakan/" />
+        <folder expanded="1" path="animation-folder/gameOver/" />
+        <folder expanded="1" path="animation-folder/food/" />
+        <folder expanded="1" path="animation-folder/tool/" />
+        <folder expanded="1" path="animation-folder/coin/" />
+        <folder expanded="1" path="animation-folder/main/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/btPlay/" />
+        <folder expanded="1" path="animation-folder/level/" />
+        <folder expanded="1" path="animation-folder/number/" />
+        <folder expanded="1" path="animation-folder/btBack/" />
+        <folder expanded="1" path="animation-folder/btBack2Select/" />
+        <folder expanded="1" path="animation-folder/point/" />
+        <folder expanded="1" path="animation-folder/gui/" />
+        <folder expanded="1" path="animation-folder/restart/" />
+        <folder expanded="1" path="animation-folder/btHome/" />
+        <folder expanded="1" path="animation-folder/btNex/" />
+        <folder expanded="1" path="animation-folder/btInfo/" />
+        <folder expanded="1" path="animation-folder/bgTentang/" />
+        <folder expanded="1" path="animation-folder/stars/" />
+        <folder expanded="1" path="animation-folder/btNextStart/" />
+    </folders-expanded>
+</c2uistate>
